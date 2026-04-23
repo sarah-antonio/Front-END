@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Exemplo TechFood - Grid + Media Query</title>
   </head>
 
@@ -12,6 +12,9 @@
 
     <header id="topo-loja">
       <h1>TechFood - Sabor e Saber</h1>
+
+      <p id="boas-vindas">Carregando</p>
+      <p id="nome">Seu nome aqui!</p>
 
       <input type="checkbox" id="bt_menu" />
       <label for="bt_menu" id="label-menu">&#9776;</label>
@@ -28,16 +31,22 @@
       <section id="secao-massas">
         <h2 class="titulo-secao">Nossas Massas</h2>
         <div class="vitrine-grid">
-          <article class="card">
-            <img src="" alt="lasanha a bolonhesa " />
+          <article id="card-lasanha" class="card">
+            <img src="imagens/lasanha.png" alt="lasanha a bolonhesa " />
             <h3>Lasanha a bolonhesa</h3>
             <p class="desc">Massa artesanal e molho especial</p>
             <span class="preco">R$ 45,00</span>
+            <div class="quiantidade">
+              <label for="qtd-lasanha"></label>
+              <input type="number" id="qtd-lasanha" value="1" 
+              min="1">
+            </div>
+
             <button class="bt_pedido">Pedir agora</button>
           </article>
 
-          <article class="card">
-            <img src="" alt="nhoque e pesto" />
+          <article id="card-nhoque" class="card">
+            <img src= "imagens/nhoque.png"alt= "nhoque e pesto" />
             <h3>Nhoque e pesto</h3>
             <p class="desc">Batata fresca e manjericão organico</p>
             <span class="preco">R$ 38,00</span>
@@ -45,7 +54,7 @@
           </article>
 
           <article class="card">
-            <img src="" alt="Espaguete carbonara" />
+            <img src="imagens/espaguete.png" alt="Espaguete carbonara" />
             <h3>Espaguete carbonara</h3>
             <p class="desc">Receita original italiana</p>
             <span class="preco">R$ 42,00</span>
@@ -57,7 +66,7 @@
         <h2 class="titulo-secao">Nossas sobremesas</h2>
         <div class="vitrine-grid">
           <article class="card">
-            <img src="" alt="Pudim de leite condensado " />
+            <img src="imagens/pudim.png" alt="Pudim de leite condensado " />
             <h3>Pudim de leite</h3>
             <p class="desc">classico com calda de caramelo</p>
             <span class="preco">R$ 15,00</span>
@@ -65,7 +74,7 @@
           </article>
 
           <article class="card">
-            <img src="" alt="Brownie com sorvete de chocolate" />
+            <img src="imagens/brownie.png" alt="Brownie com sorvete de chocolate" />
             <h3>Brownie com sorvete</h3>
             <p class="desc">Com chocolate belga 70% cacau</p>
             <span class="preco">R$ 22,00</span>
@@ -73,7 +82,7 @@
           </article>
 
           <article class="card">
-            <img src="" alt="Torta de Limão" />
+            <img src="imagens/torta.png" alt="Torta de Limão" />
             <h3>Torta de Limão</h3>
             <p class="desc">Crocante e refrescante</p>
             <span class="preco">R$ 18,00</span>
@@ -92,7 +101,10 @@
         </div>
 
     </footer>
-      <script src="./src/script/stript.js" defer></script>
+      <script src="scripts/aula6.js" defer>
+        
+      </script>
      
     </body>
 </html>
+
